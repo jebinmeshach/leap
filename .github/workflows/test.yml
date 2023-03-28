@@ -18,11 +18,4 @@ jobs:
           chip = platform.processor()
           print(chip)
         shell: python    
-    run-different-shells:
-      runs-on: windows-latest
-      steps:
-        - name: powershell cmds
-          run: Get-Location
-        - name: bash cmds
-          run: pwd
-          shell: bash
+    
