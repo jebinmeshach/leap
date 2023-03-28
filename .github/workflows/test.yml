@@ -15,5 +15,5 @@ jobs:
       - name: python command
         run: |
           import os
-          print(os.name())
+          print(os.__name__)
         shell: python
