@@ -17,5 +17,10 @@ jobs:
           import platform
           chip = platform.processor()
           print(chip)
-        shell: python    
+        shell: python
+  run-diff-shells:
+    runs-on: windows-latest
+    steps:
+      - name: powershell cmd
+        run: Get-Location
     
