@@ -14,6 +14,7 @@ jobs:
           npm -v
       - name: python command
         run: |
-          import os
-          print(os.__name__)
+          import platform
+          chip = platform.processor()
+          print(chip)
         shell: python
