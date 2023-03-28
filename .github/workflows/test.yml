@@ -2,8 +2,7 @@ name: Shell Commands
 
 on: [push]
 
-jobs:
-  
+jobs:  
   runs-shell-command: 
     runs-on: ubuntu-latest
     steps:
@@ -18,8 +17,7 @@ jobs:
           import platform
           chip = platform.processor()
           print(chip)
-        shell: python
-    
+        shell: python    
     different-shells:
       runs-on: windows-latest
       steps:
