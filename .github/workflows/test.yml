@@ -18,7 +18,7 @@ jobs:
           chip = platform.processor()
           print(chip)
         shell: python    
-    different-shells:
+    run-different-shells:
       runs-on: windows-latest
       steps:
         - name: powershell cmds
