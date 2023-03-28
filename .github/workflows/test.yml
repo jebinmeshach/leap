@@ -3,6 +3,7 @@ name: Shell Commands
 on: [push]
 
 jobs:
+  
   runs-shell-command: 
     runs-on: ubuntu-latest
     steps:
@@ -18,3 +19,12 @@ jobs:
           chip = platform.processor()
           print(chip)
         shell: python
+    
+    different-shells:
+      runs-on: windows-latest
+      steps:
+        - name: powershell cmds
+          run: parent-directory
+        - name: bash cmds
+          run: pwd
+          shell: bash
