@@ -23,4 +23,7 @@ jobs:
     steps:
       - name: powershell cmd
         run: Get-Location
+      - name: bash cmd
+        run: pwd
+        shell: bash
     
