@@ -20,6 +20,7 @@ jobs:
         shell: python
   run-diff-shells:
     runs-on: windows-latest
+    needs: ["runs-shell-command"]
     steps:
       - name: powershell cmd
         run: Get-Location
